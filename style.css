@@ -1,0 +1,52 @@
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.header-img {
+    height: 400px;
+    margin-bottom: 5px;
+}
+
+.row , .third-row {
+    display: flex;
+    gap: 5px;
+}
+
+.row > div {
+    flex: 1;
+}
+
+.second-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.second-row div{
+    height: 200px;
+}
+
+.third-row > div{
+    flex: 1;
+}
+
+.third-row {
+   margin-top: 5px;
+}
+
+.third-row-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .row , .third-row {
+        flex-direction: column;
+    }
+
+    .third-row-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
